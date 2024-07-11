@@ -7,7 +7,7 @@
     
     width: 100%;
     background-color: #844826;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     justify-content: start;
 }
@@ -30,7 +30,7 @@
     display: none;
     position: absolute;
     top: 100%; 
-    z-index: 1000; 
+    z-index: 2000; 
     min-width: 160px;
     padding: 5px 0;
     margin: 2px 0 0;
@@ -111,17 +111,19 @@
     width: 400px;
     max-width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 
 
 .footer {
     background-color: #844826;
-    padding: 10px;
+    padding: 1px;
     border-top: 1px #ccc;
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 .redes-sociales {
@@ -169,4 +171,80 @@
 .icono-busqueda {
     width: 20px;
     height: 20px;
+}
+
+.contacto{
+    float: right;
+    margin-right: 300px;
+    margin-top: 25px;
+
+}
+
+.redes-contacto img{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-color: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    overflow: auto; 
+    max-width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.card {
+    width: 15rem; 
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 18rem;
+    }
+
+    .barra-nav .navegacion {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .barra-nav .navegacion button {
+        margin: 5px 0; 
+        width: 100%; 
+    }
+}
+
+.barra-nav {
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0; 
+    margin-top: 20px;
+}
+
+.barra-nav .navegacion button {
+    background-color: #753c1a; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 0 5px;
+    cursor: pointer; 
+}
+
+.barra-nav .navegacion button:hover {
+    background-color: #5a2e14;
 }
