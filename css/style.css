@@ -248,3 +248,21 @@
 .barra-nav .navegacion button:hover {
     background-color: #5a2e14;
 }
+.carrito{
+    position: absolute;
+    top: 90px; 
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; 
+}
+.carrito-compra{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

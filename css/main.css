@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#carouselExample {
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  overflow: auto;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.card {
+  width: 15rem;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.head-container {
+  width: 100%;
+  background-color: #844826;
+  overflow: visible;
+  display: flex;
+  justify-content: start;
+}
+.head-container .head {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.indice {
+  background-color: #753c1a;
+  color: white;
+  padding: 10px 20px;
+  border: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 2000;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+.dropdown-menu .dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-menu .dropdown-item .dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.logo {
+  width: 65px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+}
+
+.barra-busqueda {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 1150px;
+}
+.barra-busqueda .barra-busqueda input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.barra-busqueda .barra-busqueda input .barra-busqueda button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.barra-busqueda .barra-busqueda input .barra-busqueda button .icono-busqueda {
+  width: 20px;
+  height: 20px;
+}
+
+.contenedor-productos {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fila {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  padding: 100px;
+  text-align: center;
+}
+.columna .columna img {
+  height: 400px;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.carrito {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.carrito .carrito-compra {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.barra-nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+.barra-nav .barra-nav .navegacion button {
+  background-color: #753c1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.barra-nav .barra-nav .navegacion button .barra-nav .navegacion button:hover {
+  background-color: #5a2e14;
+}
+
+.contacto {
+  float: right;
+  margin-right: 300px;
+  margin-top: 25px;
+}
+
+.redes-contacto img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  background-color: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #844826;
+  padding: 1px;
+  border-top: 1px #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.redes-sociales .redes-sociales a {
+  margin: 0 10px;
+}
+.redes-sociales .redes-sociales a .redes-sociales img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 18rem;
+  }
+  .barra-nav .navegacion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .barra-nav .navegacion button {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
