@@ -1,0 +1,13 @@
+//Reset
+@import './config/reset';
+@import './config/bs';
+
+//Layout
+@import './header';
+@import './galeria';
+@import './barra-nav';
+@import './contacto';
+@import './footer';
+
+//Media queries
+@import './config/mq'
