@@ -1,22 +1,21 @@
 .footer {
     background-color: #844826;
     padding: 1px;
-    border-top: 1px #ccc;
-    position: fixed;
+    border-top: 1px solid #ccc; 
     bottom: 0;
     width: 100%;
     margin-top: auto;
-}
-.redes-sociales {
+  }
+  .redes-sociales {
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
-    .redes-sociales a {
-        margin: 0 10px;
-        .redes-sociales img {
-            width: 40px;
-            height: 40px;
-        }
+    a {
+      margin: 0 10px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
     }
-}
+  }
 
