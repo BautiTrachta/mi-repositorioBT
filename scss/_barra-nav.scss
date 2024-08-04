@@ -1,17 +1,28 @@
 .barra-nav {
     display: flex;
-    justify-content: center; 
-    padding: 20px 0; 
-    margin-top: 20px;
-    .barra-nav .navegacion button {
-        background-color: #753c1a; 
-        color: white; 
-        border: none; 
-        padding: 10px 20px; 
+    justify-content: center;
+    padding: 20px 0;
+    .navegacion {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      width: 100%;
+  
+      button {
+        background-color: #753c1a;
+        color: white;
+        border: none;
+        padding: 10px 20px;
         margin: 0 5px;
-        cursor: pointer; 
-        .barra-nav .navegacion button:hover {
-            background-color: #5a2e14;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 10px;
+        flex-shrink: 1;
+        white-space: nowrap;
+  
+        &:hover {
+          background-color: #5a2e14;
         }
+      }
     }
-}
+  }
